@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="AlgorithmNamespace" targetNamespace="AlgorithmNamespace"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:element name="algorithm">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="normal_info" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="run_info" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="capabilities" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="debug_info" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!-- define normal_info -->
+<xs:element name="normal_info">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="version" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element name="type" type="typeEnum" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="supported_usecase" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="multi_frame" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="typeEnum">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="algorithm" />
+    <xs:enumeration value="segment" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="supported_usecase">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="usecase" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="usecase">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="any" />
+      <xs:enumeration value="preview" />
+      <xs:enumeration value="snapshot" />
+      <xs:enumeration value="video" />
+      <xs:enumeration value="test" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="multi_frame">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" minOccurs="1" maxOccurs="1" />
+      <xs:element name="frame_number" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="bool">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="0" />
+    <xs:enumeration value="1" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- define run_info -->
+<xs:element name="run_info">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="mode" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="manual" minOccurs="0" maxOccurs="1" />
+      <xs:element ref="condition" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="mode">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="always" />
+      <xs:enumeration value="manual" />
+      <xs:enumeration value="condition" />
+      <xs:enumeration value="off" />
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="manual">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="key" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="condition">
+  <xs:complexType>
+    <xs:all>
+      <xs:element name="iso" type="conditionType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="exposure_time" type="conditionType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="lux_index" type="conditionType" minOccurs="0" maxOccurs="1" />
+      <xs:element name="color_temperature" type="conditionType" minOccurs="0" maxOccurs="1" />
+    </xs:all>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="conditionType">
+    <xs:sequence>
+      <xs:element name="pattern" type="PatternType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="PatternType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="range" />
+    <xs:enumeration value="bigger" />
+    <xs:enumeration value="smaller" />
+    <xs:enumeration value="equal" />
+    <xs:enumeration value="not-equal" />
+    <xs:enumeration value="zero" />
+    <xs:enumeration value="not-zero" />
+    <xs:enumeration value="ignore" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- define capabilities -->
+<xs:element name="capabilities">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="max_width" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element name="max_height" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element name="preferredProcessOn" type="preferredProcessType" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="supported_format" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="focus" minOccurs="0" maxOccurs="1" />
+      <xs:element name="multi_instance_support" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element name="pal_required" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element name="GL_required" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="preferredProcessType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="input" />
+    <xs:enumeration value="output" />
+    <xs:enumeration value="any" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="supported_format">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="format" type="imageFormat" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="imageFormat">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="NV12_SEMI_PLANAR" />
+    <xs:enumeration value="NV21_SEMI_PLANAR" />
+    <xs:enumeration value="YUV" />
+    <xs:enumeration value="MONO" />
+    <xs:enumeration value="JPEG" />
+    <xs:enumeration value="HEIF" />
+    <xs:enumeration value="BAYER" />
+    <xs:enumeration value="TEXTURE" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="focus">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="supported_status" minOccurs="0" maxOccurs="1" />
+      <xs:element ref="supported_distance" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="supported_status">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="status" type="statusType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="statusType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="scanning" />
+    <xs:enumeration value="focused" />
+    <xs:enumeration value="unfocused" />
+    <xs:enumeration value="inactive" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="supported_distance">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="distance" type="distanceType" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="distanceType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="macro" />
+    <xs:enumeration value="normal" />
+    <xs:enumeration value="infinity" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- define debug_info -->
+<xs:element name="debug_info">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="check_performance" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="dump_input_output" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="memory_control" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="fd_control" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="check_performance">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" />
+      <xs:element name="count" type="xs:unsignedInt" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="dump_input_output">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" />
+      <xs:element name="format" type="imageFormat" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="memory_control">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" />
+      <xs:element name="max_size" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="fd_control">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" />
+      <xs:element name="max_number" type="xs:unsignedInt" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>

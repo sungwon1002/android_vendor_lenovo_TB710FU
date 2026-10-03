@@ -1,0 +1,16 @@
+#! /bin/sh
+#
+#Copyright (c) 2021 Qualcomm Technologies, Inc.
+#All Rights Reserved.
+#Confidential and Proprietary - Qualcomm Technologies, Inc.
+
+service thermal-engine /vendor/bin/thermal-engine-v2
+	class main
+	user root
+	group root system
+	socket thermal-send-client stream 0660 system system
+	socket thermal-recv-client stream 0660 system system
+	socket thermal-recv-passive-client stream 0660 system system
+	socket thermal-send-rule stream 0660 system system
+on property:sys.boot_completed=1
+	restart thermal-engine

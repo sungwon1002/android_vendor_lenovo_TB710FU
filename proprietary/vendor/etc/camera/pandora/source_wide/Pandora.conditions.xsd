@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="ConditionSpace" targetNamespace="ConditionSpace"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:element name="conditions">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="AE" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="AE">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="lowlight" type="ae_type"/>
+      <xs:element name="highlight" type="ae_type"/>
+      <xs:element name="exposure_chagne" type="ae_type"/>
+      <xs:element name="hdr" type="hdr_type"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType  name="ae_type">
+  <xs:all>
+    <xs:element name="iso" type="conditionType" minOccurs="0" maxOccurs="1" />
+    <xs:element name="exposure_time" type="conditionType" minOccurs="0" maxOccurs="1" />
+    <xs:element name="lux_index" type="conditionType" minOccurs="0" maxOccurs="1" />
+  </xs:all>
+</xs:complexType>
+
+<xs:complexType name="conditionType">
+    <xs:sequence>
+      <xs:element name="pattern" type="PatternType" minOccurs="1" maxOccurs="1" />
+      <xs:element name="value" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="PatternType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="range" />
+    <xs:enumeration value="bigger" />
+    <xs:enumeration value="smaller" />
+    <xs:enumeration value="equal" />
+    <xs:enumeration value="not-equal" />
+    <xs:enumeration value="zero" />
+    <xs:enumeration value="not-zero" />
+    <xs:enumeration value="ignore" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType  name="hdr_type">
+  <xs:all>
+    <xs:element name="min_confidence" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+  </xs:all>
+</xs:complexType>
+</xs:schema>

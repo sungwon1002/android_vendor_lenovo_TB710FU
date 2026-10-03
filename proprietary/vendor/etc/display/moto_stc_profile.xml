@@ -1,0 +1,11 @@
+<MotoStcConfigs>
+    <!-- If use moto_stc_profile.xml to identify the panel to be calibrated, all the supported prim&&cli panel names must be list in the xml. -->
+    <!-- Otherwise the cal param for the panel whose name is not in the list will not be loaded. -->
+    <config id="panelList" description="Supported Panel List">
+        <!--prim>mipi_mot_cmd_xxx</prim-->
+        <!--cli>mipi_mot_cmd_xxx</cli-->
+    </config>
+    <config id="panelNamePath" description="Path for reading panel name">
+        <prim>sys/class/factory/interface/hw_info/lcd_cali</prim>
+    </config>
+</MotoStcConfigs>

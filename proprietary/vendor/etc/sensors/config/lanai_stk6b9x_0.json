@@ -1,0 +1,209 @@
+{
+    "stk6b9x_0_platform": {
+        ".rgb": {
+            "owner": "sns_stk6b9x",
+            ".fac_cal": {
+                "owner": "sns_stk6b9x",
+                "f_channel_scale":{ "type": "flt", "ver": "0",
+                  "data": "1.0"
+                },
+                "f_channel_bias":{ "type": "flt", "ver": "0",
+                  "data": "0.0"
+                },
+                "r_channel_scale":{ "type": "flt", "ver": "0",
+                  "data": "1.0"
+                },
+                "r_channel_bias":{ "type": "flt", "ver": "0",
+                  "data": "0.0"
+                },
+                "g_channel_scale":{ "type": "flt", "ver": "0",
+                  "data": "1.0"
+                },
+                "g_channel_bias":{ "type": "flt", "ver": "0",
+                  "data": "0.0"
+                },
+                "b_channel_scale":{ "type": "flt", "ver": "0",
+                  "data": "1.0"
+                },
+                "b_channel_bias":{ "type": "flt", "ver": "0",
+                  "data": "0.0"
+                },
+                "c_channel_scale":{ "type": "flt", "ver": "0",
+                  "data": "1.0"
+                },
+                "c_channel_bias":{ "type": "flt", "ver": "0",
+                  "data": "0.0"
+                },
+                "color_temp_scale":{ "type": "flt", "ver": "0",
+                  "data": "1.0"
+                },
+                "color_temp_bias":{ "type": "flt", "ver": "0",
+                  "data": "0.0"
+                }
+            }
+        },
+        ".config": {
+            "max_bus_speed_khz": {
+                "ver": "0",
+                "type": "int",
+                "data": "400"
+            },
+            "bus_type": {
+                "ver": "0",
+                "type": "int",
+                "data": "0"
+            },
+            "min_bus_speed_khz": {
+                "ver": "0",
+                "type": "int",
+                "data": "400"
+            },
+            "irq_is_chip_pin": {
+                "ver": "0",
+                "type": "int",
+                "data": "1"
+            },
+            "irq_pull_type": {
+                "ver": "0",
+                "type": "int",
+                "data": "2"
+            },
+            "rail_on_state": {
+                "ver": "0",
+                "type": "int",
+                "data": "2"
+            },
+            "vdd_rail": {
+                "ver": "0",
+                "type": "str",
+                "data": "/pmic/client/sensor_vdd"
+            },
+            "slave_config": {
+                "ver": "0",
+                "type": "int",
+                "data": "71"
+            },
+            "num_rail": {
+                "ver": "0",
+                "type": "int",
+                "data": "2"
+            },
+            "reg_addr_type": {
+                "ver": "0",
+                "type": "int",
+                "data": "0"
+            },
+            "irq_trigger_type": {
+                "ver": "0",
+                "type": "int",
+                "data": "1"
+            },
+            "rigid_body_type": {
+                "ver": "0",
+                "type": "int",
+                "data": "0"
+            },
+            "irq_drive_strength": {
+                "ver": "0",
+                "type": "int",
+                "data": "0"
+            },
+            "vddio_rail": {
+                "ver": "0",
+                "type": "str",
+                "data": "/pmic/client/sensor_vddio"
+            },
+            "owner": "sns_stk6b9x",
+            "dri_irq_num": {
+                "ver": "0",
+                "type": "int",
+                "data": "64"
+            },
+            "bus_instance": {
+                "ver": "0",
+                "type": "int",
+                "data": "2"
+            }
+        },
+        ".als": {
+            "owner": "sns_stk6b9x",
+            ".fac_cal": {
+                "owner": "sns_stk6b9x",
+                "scale": {
+                    "ver": "0",
+                    "type": "flt",
+                    "data": "1.0"
+                },
+                "bias": {
+                    "ver": "0",
+                    "type": "flt",
+                    "data": "5000.0"
+                }
+            }
+        },
+        "owner": "sns_stk6b9x"
+    },
+    "config": {
+        "hw_platform": [
+            "MTP"
+        ],
+        "soc_id": [
+            "696"
+        ]
+    },
+    "stk6b9x_0": {
+        "owner": "sns_stk6b9x",
+        ".ambient_light": {
+            "owner": "sns_stk6b9x",
+            ".config": {
+                "owner": "sns_stk6b9x",
+                "hw_id": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "sync_stream": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "is_dri": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "res_idx": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                }
+            }
+        },
+        ".rgb": {
+            "owner": "sns_stk6b9x",
+            ".config": {
+                "owner": "sns_stk6b9x",
+                "hw_id": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "sync_stream": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "is_dri": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "0"
+                },
+                "res_idx": {
+                    "ver": "0",
+                    "type": "int",
+                    "data": "1"
+                }
+            }
+        }
+    }
+}

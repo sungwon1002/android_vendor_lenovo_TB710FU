@@ -1,0 +1,30 @@
+#add node perms for different plat
+on post-fs-data
+    chown system system /proc/gesture_control
+    chown system system /proc/panel_direction
+    chown system system /proc/game_mode
+    chown system system /proc/edge_grid_zone
+    chown system system /proc/haptics
+    chown system system /proc/support_pen
+    chown system system /proc/Pen_ID
+    chown system system /proc/pen_wakeup_mode
+    chown system system /proc/pen_type
+    chown system system /proc/pen_wakeup_switch
+    chown system system /proc/report_threshold
+    chown system system /proc/game_edge
+
+    chmod 0660 /proc/gesture_control
+    chmod 0660 /proc/panel_direction
+    chmod 0660 /proc/game_mode
+    chmod 0660 /proc/edge_grid_zone
+    chmod 0660 /proc/haptics
+    chmod 0660 /proc/support_pen
+    chmod 0660 /proc/Pen_ID
+    chmod 0660 /proc/pen_wakeup_mode
+    chmod 0660 /proc/pen_type
+    chmod 0660 /proc/pen_wakeup_switch
+
+service touchscreen_hal_service /vendor/bin/hw/vendor.lenovo.hardware.touchscreen-service
+    class hal
+    user system
+    group system

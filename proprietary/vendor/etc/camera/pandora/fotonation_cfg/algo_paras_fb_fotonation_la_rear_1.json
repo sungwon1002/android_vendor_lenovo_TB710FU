@@ -1,0 +1,305 @@
+{
+  "cur_device": "lapis",
+  "devices": [
+    {
+      "device": "lapis",
+      "cameras": [
+        {
+          "camId": "0",
+          "scenes": [
+            {
+              "mode": "preview",
+              "levels": [
+                {
+                  "level": "1",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 5,
+                    "smartColor": 5,
+                    "skinSmoothing": 40,
+                    "skinToning": 10,
+                    "colorTemperature": 128,
+                    "smoothing": 40,
+                    "toning": 10,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 25,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0
+                  }
+                },
+                {
+                  "level": "2",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 13,
+                    "smartColor": 15,
+                    "skinSmoothing": 70,
+                    "skinToning": 25,
+                    "colorTemperature": 128,
+                    "smoothing": 70,
+                    "toning": 25,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 45,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0
+                  }
+                },
+                {
+                  "level": "3",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 21,
+                    "smartColor": 25,
+                    "skinSmoothing": 100,
+                    "skinToning": 40,
+                    "colorTemperature": 128,
+                    "smoothing": 100,
+                    "toning": 40,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 85,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0
+                  }
+                },
+                {
+                  "level": "4",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 29,
+                    "smartColor": 35,
+                    "skinSmoothing": 130,
+                    "skinToning": 55,
+                    "colorTemperature": 128,
+                    "smoothing": 130,
+                    "toning": 55,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 85,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0
+                  }
+                },
+                {
+                  "level": "5",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 37,
+                    "smartColor": 45,
+                    "skinSmoothing": 160,
+                    "skinToning": 70,
+                    "colorTemperature": 128,
+                    "smoothing": 160,
+                    "toning": 70,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 85,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0
+                  }
+                }
+              ]
+            },
+            {
+              "mode": "capture",
+              "levels": [
+                {
+                  "level": "1",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 10,
+                    "smartColor": 0,
+                    "skinSmoothing": 115,
+                    "skinToning": 5,
+                    "colorTemperature": 128,
+                    "smoothing": 115,
+                    "toning": 5,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 5,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0,
+                    "teethWhitening": 0,
+                    "deflash": 0,
+                    "denoise": 0,
+                    "blush": 0,
+                    "spotLightStren": 0,
+                    "noseSlimming": 0,
+                    "spotLightDir": 0,
+                    "eyeBrightening": 0
+                  }
+                },
+                {
+                  "level": "2",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 25,
+                    "smartColor": 0,
+                    "skinSmoothing": 150,
+                    "skinToning": 20,
+                    "colorTemperature": 128,
+                    "smoothing": 150,
+                    "toning": 20,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 20,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0,
+                    "teethWhitening": 0,
+                    "deflash": 0,
+                    "denoise": 0,
+                    "blush": 0,
+                    "spotLightStren": 0,
+                    "noseSlimming": 0,
+                    "spotLightDir": 0,
+                    "eyeBrightening": 0
+                  }
+                },
+                {
+                  "level": "3",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 40,
+                    "smartColor": 0,
+                    "skinSmoothing": 185,
+                    "skinToning": 35,
+                    "colorTemperature": 128,
+                    "smoothing": 185,
+                    "toning": 35,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 35,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0,
+                    "teethWhitening": 0,
+                    "deflash": 0,
+                    "denoise": 0,
+                    "blush": 0,
+                    "spotLightStren": 0,
+                    "noseSlimming": 0,
+                    "spotLightDir": 0,
+                    "eyeBrightening": 0
+                  }
+                },
+                {
+                  "level": "4",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 55,
+                    "smartColor": 0,
+                    "skinSmoothing": 220,
+                    "skinToning": 50,
+                    "colorTemperature": 128,
+                    "smoothing": 220,
+                    "toning": 50,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 50,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0,
+                    "teethWhitening": 0,
+                    "deflash": 0,
+                    "denoise": 0,
+                    "blush": 0,
+                    "spotLightStren": 0,
+                    "noseSlimming": 0,
+                    "spotLightDir": 0,
+                    "eyeBrightening": 0
+                  }
+                },
+                {
+                  "level": "5",
+                  "property": {
+                    "faceStrengthsCount": 1,
+                    "allocate": 1,
+                    "bUseCustomSharpening": "true",
+                    "customSharpeningFace": 40,
+                    "customSharpeningGlobal": 0,
+                    "smartLight": 70,
+                    "smartColor": 0,
+                    "skinSmoothing": 255,
+                    "skinToning": 65,
+                    "colorTemperature": 128,
+                    "smoothing": 255,
+                    "toning": 65,
+                    "eyeEnlargement": 0,
+                    "eyeEnhancement": 0,
+                    "threeDLook": 65,
+                    "spotsRemoval": 0,
+                    "slimming": 0,
+                    "lipsPerfect": 0,
+                    "eyeCircles": 0,
+                    "teethWhitening": 0,
+                    "deflash": 0,
+                    "denoise": 0,
+                    "blush": 0,
+                    "spotLightStren": 0,
+                    "noseSlimming": 0,
+                    "spotLightDir": 0,
+                    "eyeBrightening": 0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

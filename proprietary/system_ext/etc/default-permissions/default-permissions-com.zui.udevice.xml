@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<exceptions>
+    <exception
+        package="com.zui.udevice"
+        sha256-cert-digest="D9:60:AC:F5:07:00:8C:16:70:83:B2:D6:59:E9:E6:15:54:5B:46:8E:43:8B:FD:91:F9:87:4F:0B:13:AA:68:23">
+        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false"/>
+        <permission name="android.permission.BLUETOOTH_SCAN" fixed="false"/>
+    </exception>
+</exceptions>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="PipelineNamespace" targetNamespace="PipelineNamespace"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:element name="pipeline">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" minOccurs="1" maxOccurs="1" />
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="id" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="supported_usecase" minOccurs="1" maxOccurs="1" />
+      <xs:element name="process_order" type="process_order_type" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="algorithms" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="linkages" minOccurs="0" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="bool">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="0" />
+    <xs:enumeration value="1" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="supported_usecase">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="usecase" type="usecase_type" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="usecase_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="any" />
+    <xs:enumeration value="preview" />
+    <xs:enumeration value="snapshot" />
+    <xs:enumeration value="video" />
+    <xs:enumeration value="test" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="process_order_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="fixed" />
+    <xs:enumeration value="dynamic" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="algorithms">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="algorithm" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="linkages">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="link" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<!-- define algorithms -->
+<xs:element name="algorithm">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="enable" type="bool" minOccurs="1" maxOccurs="1" />
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="version" type="xs:string" minOccurs="1" maxOccurs="1" />
+      <xs:element name="sequence" type="xs:unsignedInt" minOccurs="1" maxOccurs="1" />
+      <xs:element name="algorithm_type" type="algorithmType" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="ports" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="algorithmType">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="segment" />
+    <xs:enumeration value="algorithm" />
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="ports">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="port" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:element name="port">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="type" type="port_type" minOccurs="1" maxOccurs="1" />
+      <xs:element name="name" type="xs:string" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+
+<xs:simpleType name="port_type">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="source" />
+    <xs:enumeration value="sink" />
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- define linkages -->
+<xs:element name="link">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="source" type="link_node" minOccurs="1" maxOccurs="1" />
+      <xs:element name="sink" type="link_node" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="link_node">
+  <xs:sequence>
+    <xs:element name="algorithm" type="xs:string" minOccurs="1" maxOccurs="1" />
+    <xs:element name="author" type="xs:string" minOccurs="1" maxOccurs="1" />
+    <xs:element name="version" type="xs:string" minOccurs="1" maxOccurs="1" />
+    <xs:element name="port" type="xs:string" minOccurs="1" maxOccurs="1" />
+  </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

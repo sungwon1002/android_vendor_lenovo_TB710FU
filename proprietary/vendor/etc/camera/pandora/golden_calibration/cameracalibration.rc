@@ -1,0 +1,10 @@
+#[ZUIQ-11386]:suobing1@lenovo.com add for camera ducamera calibration golden sample bin
+on property:persist.log.tag.camera.calibration=1
+#    chmod 644 /data/vendor/camera/cal_w48_u16.bin
+    chmod 644 /vendor/etc/camera/pandora/golden_calibration/golden.bin
+#    copy  /data/vendor/camera/cal_w48_u16.bin /mnt/vendor/persist/camera/cal_w48_u16.bin
+    copy /vendor/etc/camera/pandora/golden_calibration/golden.bin /mnt/vendor/persist/camera/golden.bin
+   # chmod 777 /data/vendor/camera/cal_w48_u16.bin
+    chmod 777 /mnt/vendor/persist/camera/golden.bin
+    #rm  /data/vendor/camera/dualCamCal.bin
+

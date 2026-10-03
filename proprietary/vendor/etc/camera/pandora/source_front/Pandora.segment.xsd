@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns="SegmentNamespace" targetNamespace="SegmentNamespace"
+  xmlns:pipens="PipelineNamespace" xmlns:algons="AlgorithmNamespace"
+  elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+<xs:import namespace="PipelineNamespace" schemaLocation="Pandora.pipeline.xsd"/>
+<xs:import namespace="AlgorithmNamespace" schemaLocation="Pandora.algorithm.xsd"/>
+
+<xs:element name="segment">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element ref="algons:algorithm" minOccurs="1" maxOccurs="1" />
+      <xs:element ref="pipens:pipeline" minOccurs="1" maxOccurs="1" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
