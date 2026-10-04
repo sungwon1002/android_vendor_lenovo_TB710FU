@@ -955,6 +955,115 @@ PRODUCT_COPY_FILES += \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_ov13b10.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_ov13b10.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.sensormodule.txd_ov13b10_2.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.txd_ov13b10_2.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.tpg.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.tpg.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_kc_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_kc_gc02m1_macro.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_lce_gc13a2_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_lce_gc13a2_front.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_qtech_ov13b10_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_qtech_ov13b10_main.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_gc02m1_macro.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_gc13a2_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_gc13a2_front.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/com.qti.tuned.topaz_txd_ov13b10_main.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.topaz_txd_ov13b10_main.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/imx688_4.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_4.pb \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/imx688_6.pb:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/imx688_6.pb \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b68v04s12n52.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b68v04s12n52.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b68v04s12n53.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b68v04s12n53.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n02.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n03.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n03.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n04.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n04.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n06.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n06.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n07.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n07.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n12.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n12.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n13.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n13.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n14.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n14.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n15.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n16.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n16.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n17.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n17.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n18.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n18.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n19.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n19.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n20.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n20.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n21.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n21.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n22.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n22.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n23.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n23.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n24.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n24.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n25.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n25.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n26.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n26.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n27.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n27.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n28.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n28.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n29.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n30.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n35.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n35.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n36.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n36.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n37.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n37.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n38.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n38.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n39.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n39.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n40.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n40.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n43.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n43.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n44.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n44.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n45.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n45.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n46.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n46.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n47.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n47.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n48.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n48.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n49.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n49.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n50.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n50.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n51.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n51.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n54.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n54.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n55.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n55.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n56.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n56.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n57.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n57.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n58.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n58.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n59.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n59.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n60.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n60.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n61.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n61.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm3b73v04s12n62.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm3b73v04s12n62.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a68v08s12n52.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a68v08s12n52.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a68v08s12n53.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a68v08s12n53.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n02.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n02.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n03.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n03.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n04.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n04.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n06.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n06.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n07.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n07.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n12.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n12.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n13.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n13.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n14.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n14.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n15.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n15.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n16.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n16.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n17.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n17.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n18.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n18.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n19.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n19.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n20.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n20.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n21.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n21.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n22.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n22.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n23.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n23.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n24.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n24.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n25.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n25.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n26.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n26.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n27.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n27.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n28.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n28.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n29.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n29.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n30.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n30.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n35.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n35.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n36.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n36.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n37.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n37.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n38.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n38.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n39.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n39.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n40.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n40.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n43.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n43.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n44.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n44.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n45.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n45.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n46.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n46.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n47.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n47.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n48.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n48.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n49.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n49.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n50.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n50.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n51.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n51.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n54.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n54.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n55.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n55.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n56.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n56.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n57.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n57.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n58.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n58.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n59.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n59.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n60.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n60.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n61.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n61.bin \
+    vendor/lenovo/TB710FU/proprietary/vendor/lib64/bm4a73v08s12n62.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/bm4a73v08s12n62.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
     vendor/lenovo/TB710FU/proprietary/vendor/lib64/camera/fdconfigsecure.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigsecure.bin \
@@ -965,6 +1074,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     com.qti.eeprom.gt24p128c2csli_imx766 \
+    com.qti.eeprom.gt24p128e2csli_s5kjn1 \
     com.qti.eeprom.irs2381c_polar \
     com.qti.eeprom.truly_cmb433 \
     com.qti.ois.bu63169gwz \
